@@ -1,0 +1,14 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: bazel-cache-data
+  labels:
+    app.kubernetes.io/name: bazel-cache
+    app.kubernetes.io/instance: bazel-cache
+spec:
+  storageClassName: azurefile-csi
+  accessModes:
+    - "ReadWriteMany"
+  resources:
+    requests:
+      storage: "200Gi"

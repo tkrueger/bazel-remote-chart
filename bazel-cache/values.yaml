@@ -1,0 +1,5 @@
+name: bazel-cache
+namespace: bazel-cache
+ingress:
+  host: bazel-cache.somedomain.comm
+  secretName: bazel-cache-certificates
